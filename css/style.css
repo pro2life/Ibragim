@@ -3,11 +3,6 @@
   margin: 0;
 }
 
-#header {
-  width: 1140px;
-  margin: 0 auto;
-}
-
 .container {
   width: 1140px;
   margin: 0 auto;
@@ -216,16 +211,6 @@
   text-align: center;
   color: #4A86FF;
   margin: -150px 0 0 20px;
-}
-
-.Se__G1 {
-  position: absolute;
-  width: 1000px;
-  height: 927px;
-  left: calc(50% - 500px + 647px);
-  top: 511px;
-  background: rgba(239, 57, 89, 0.4);
-  filter: blur(500px);
 }
 
 .Se__I1 {
@@ -653,7 +638,7 @@
 }
 
 .Blok__A1 {
-  width: 1700px;
+  width: 1100px;
   height: 22px;
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -666,7 +651,7 @@
   margin: 20px 0 20px 0;
 }
 .Blok__A1__A2 {
-  width: 1700px;
+  width: 1500px;
   height: 22px;
   font-family: "Inter", sans-serif;
   font-style: normal;
@@ -1045,6 +1030,137 @@
   align-items: center;
   text-align: center;
   color: black;
+}
+
+.burgerMenu1 {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  .burgerMenu1 {
+    display: block;
+  }
+  #header .menu0__menu2__A2 {
+    display: none;
+  }
+}
+.clickBurger {
+  margin-left: 900px;
+  position: absolute;
+  transition: all 0.5s linear;
+}
+
+#click:checked ~ .clickBurger {
+  margin-left: -55px;
+}
+
+.click-input {
+  display: none;
+}
+
+.TextClick {
+  border-bottom-left-radius: 70px;
+  border-bottom-right-radius: 70px;
+  width: 160px;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-direction: column;
+  background: rgba(57, 239, 239, 0.22);
+}
+
+.text {
+  color: rgba(74, 110, 255, 0.99);
+  text-decoration: none;
+}
+
+.clickLiner {
+  width: 40px;
+  height: 3px;
+  background: black;
+  margin: 4px;
+}
+
+#modalWindow1:checked ~ .FAQ__A3 {
+  display: block;
+  transition: all 2s linear;
+}
+
+.FAQ__A3 {
+  width: 700px;
+  height: 120px;
+  background: black;
+  position: absolute;
+  display: none;
+}
+
+#modalWindow2:checked ~ .FAQ__A4 {
+  display: block;
+}
+
+.FAQ__A4 {
+  transition: all 2s linear;
+  width: 700px;
+  height: 120px;
+  background: black;
+  position: absolute;
+  display: none;
+}
+
+#modalWindow3:checked ~ .FAQ__A5 {
+  display: block;
+}
+
+.FAQ__A5 {
+  transition: all 2s linear;
+  width: 700px;
+  height: 120px;
+  background: black;
+  position: absolute;
+  display: none;
+}
+
+#modalWindow4:checked ~ .FAQ__A6 {
+  display: block;
+}
+
+.FAQ__A6 {
+  transition: all 2s linear;
+  width: 700px;
+  height: 120px;
+  background: black;
+  position: absolute;
+  display: none;
+}
+
+#modalWindow5:checked ~ .FAQ__A7 {
+  display: block;
+}
+
+.FAQ__A7 {
+  transition: all 2s linear;
+  width: 700px;
+  height: 120px;
+  background: black;
+  position: absolute;
+  display: none;
+}
+
+#modalWindow6:checked ~ .FAQ__A8 {
+  display: block;
+}
+
+.FAQ__A8 {
+  transition: all 2s linear;
+  width: 700px;
+  height: 120px;
+  background: black;
+  position: absolute;
+  display: none;
 }
 
 /*# sourceMappingURL=style.css.map */
